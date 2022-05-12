@@ -1,14 +1,33 @@
 package com.example.noticiasj.Modelos;
 
-public class TutularesDeNoticias {
+import java.io.Serializable;
+
+public class TutularesDeNoticias implements Serializable {
     Fuente source= null;
     String author="";
     String title="";
     String description="";
+    String name="";
     String url="";
     String urlToImage="";
     String publishedAt="";
     String content="";
+
+    public Fuente getSource() {
+        return source;
+    }
+
+    public void setSource(Fuente source) {
+        this.source = source;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public Fuente getFuente() {
         return source;

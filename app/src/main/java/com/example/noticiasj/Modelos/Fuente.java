@@ -1,8 +1,19 @@
 package com.example.noticiasj.Modelos;
 
-public class Fuente {
+import java.io.Serializable;
+
+public class Fuente implements Serializable {
     String id="";
     String name="";
+    String category="";
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
 
     public String getId() {
         return id;

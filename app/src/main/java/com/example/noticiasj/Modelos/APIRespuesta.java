@@ -1,8 +1,9 @@
 package com.example.noticiasj.Modelos;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class APIRespuesta {
+public class APIRespuesta implements Serializable {
     /* se crean objetos para el estado de la respuesta, otro para el total de resultados y otro para eñl articulo compelt*/
     String status;
     int totalResults;

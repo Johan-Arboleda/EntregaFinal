@@ -31,7 +31,7 @@ public class llamadaAPI {
                 @Override
                 public void onResponse(Call<APIRespuesta> call, Response<APIRespuesta> response) {
                     if(response.isSuccessful()){
-                        Toast.makeText(context, "error01!!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(context, "Consulta exitosa!!", Toast.LENGTH_SHORT).show();
                     }
                     listener.onfetchData(response.body().getArticles(), response.message());
                 }

@@ -8,53 +8,50 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="82dp"
+        android:layout_height="129dp"
         android:layout_margin="6dp"
         android:orientation="horizontal"
         android:weightSum="3">
 
+        <ImageView
+            android:id="@+id/img_noticia"
+            android:layout_width="0dp"
+            android:layout_height="125dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img">
+
+        </ImageView>
+
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:layout_weight="2">
+            android:layout_weight="2"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/text_titulo"
 
-                android:textSize="10dp"
-                android:textStyle="bold"
-                android:maxLines="3"
-                android:textColor="@color/black"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                >
-            </TextView>
+                android:maxLines="4"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"></TextView>
+
             <TextView
                 android:id="@+id/text_fuente"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="12sp"
-                android:textStyle="bold"
-                android:maxLines="1"
                 android:layout_marginTop="6dp"
-                android:textColor="@color/purple_500"
-                >
-            </TextView>
-
+                android:maxLines="1"
+                android:textColor="@color/blue"
+                android:textSize="12sp"
+                android:textStyle="bold"></TextView>
 
 
         </LinearLayout>
-            <ImageView
-                android:id="@+id/img_noticia"
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:src="@drawable/not_available"
-                android:scaleType="centerCrop">
-
-            </ImageView>
 
     </LinearLayout>
 
