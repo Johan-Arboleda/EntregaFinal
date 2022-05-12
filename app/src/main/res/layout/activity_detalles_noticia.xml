@@ -78,7 +78,7 @@
 
             </TextView>
 
-            <ScrollView
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/text_detalles_contenido"
@@ -87,7 +87,7 @@
                 android:textColor="@color/white"
                 android:textSize="20dp">
 
-            </ScrollView>
+            </TextView>
 
         </LinearLayout>
     </ScrollView>
